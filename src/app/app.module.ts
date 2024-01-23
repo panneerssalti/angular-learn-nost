@@ -11,6 +11,7 @@ import { ParentComponent } from './parent-child/parent/parent.component';
 import { ChildComponent } from './parent-child/child/child.component';
 import { ChildSetterComponent } from './parent-child/child-setter/child-setter.component';
 import { ChildVersionComponent } from './parent-child/child-version/child-version.component';
+import { ChildLocalVariableComponent } from './parent-child/child-local-variable/child-local-variable.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ChildVersionComponent } from './parent-child/child-version/child-versio
     ParentComponent,
     ChildComponent,
     ChildSetterComponent,
-    ChildVersionComponent
+    ChildVersionComponent,
+    ChildLocalVariableComponent
   ],
   imports: [
     BrowserModule,

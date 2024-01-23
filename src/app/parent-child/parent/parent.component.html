@@ -11,7 +11,17 @@
 [hero]="hero"
 [master]="master"></app-child-setter> -->
 
+<!-- 
 <h1>Button to increase the version of the exising buttons</h1>
 <button type="button" (click)="newMinor()">New minor version</button>
 <button type="button" (click)="newMajor()">New major version</button>
-<app-child-version [major]='major' [minor]='minor' (event)="onEvent($event)"></app-child-version>
+<app-child-version [major]='major' [minor]='minor' (event)="onEvent($event)"></app-child-version> -->
+
+<!-- <app-child-local-variable #temp></app-child-local-variable>
+<h2>{{temp.sample}}</h2>
+<button type="button" (click)="updateMessage(temp.message)">update message</button> -->
+
+<h1>{{sample}}</h1>
+<button type="button" (click)="updateView()">update view</button>
+
+
