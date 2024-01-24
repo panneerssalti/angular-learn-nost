@@ -12,6 +12,9 @@ import { ChildComponent } from './parent-child/child/child.component';
 import { ChildSetterComponent } from './parent-child/child-setter/child-setter.component';
 import { ChildVersionComponent } from './parent-child/child-version/child-version.component';
 import { ChildLocalVariableComponent } from './parent-child/child-local-variable/child-local-variable.component';
+import { TemplatesComponent } from './templates/templates.component';
+import { ChildComComponent } from './parent-child-com/child-com/child-com.component';
+import { ParentComComponent } from './parent-child-com/parent-com/parent-com.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ChildLocalVariableComponent } from './parent-child/child-local-variable
     ChildComponent,
     ChildSetterComponent,
     ChildVersionComponent,
-    ChildLocalVariableComponent
+    ChildLocalVariableComponent,
+    TemplatesComponent,
+    ChildComComponent,
+    ParentComComponent
   ],
   imports: [
     BrowserModule,
