@@ -1,1 +1,4 @@
-<app-child-com [feed]="childFeeder"></app-child-com>
+<app-child-com [feed]="childFeeder"(outputEvent)="addDateString($event)"></app-child-com>
+<ul>
+    <li *ngFor="let date of dateArray">{{date}}</li>
+</ul>

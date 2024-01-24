@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child-com',
@@ -7,4 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 export class ChildComComponent {
   @Input('feed') inputFeed = '';
+  @Output() outputEvent = new EventEmitter<string>();
+
+  emitEvent():void{
+    let newDate:Date = new Date();
+    let result: string = newDate.toLocaleString();
+    this.outputEvent.emit(result);
+  }
 }
