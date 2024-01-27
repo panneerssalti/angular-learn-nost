@@ -17,6 +17,7 @@ import { ChildComComponent } from './parent-child-com/child-com/child-com.compon
 import { ParentComComponent } from './parent-child-com/parent-com/parent-com.component';
 import { CpParentComponent } from './content-projection/cp-parent/cp-parent.component';
 import { CpChildComponent } from './content-projection/cp-child/cp-child.component';
+import { AdComponentComponent } from './dynamic-component/ad-component/ad-component.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CpChildComponent } from './content-projection/cp-child/cp-child.compone
     ChildComComponent,
     ParentComComponent,
     CpParentComponent,
-    CpChildComponent
+    CpChildComponent,
+    AdComponentComponent
   ],
   imports: [
     BrowserModule,
