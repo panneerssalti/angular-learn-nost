@@ -1,0 +1,14 @@
+<h2>To show a single slot content projection</h2>
+<ng-content></ng-content>
+<ng-content select="[question]"></ng-content>
+<div *ngIf="expanded" [id]="contentId">
+    <ng-container [ngTemplateOutlet]="content.templateRef"></ng-container>
+</div>
+
+<h2>Content projection with ngProjectAs</h2>
+
+Default:
+<ng-content></ng-content>
+
+Question:
+<ng-content select="[question1]"></ng-content>

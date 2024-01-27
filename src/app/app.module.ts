@@ -15,6 +15,8 @@ import { ChildLocalVariableComponent } from './parent-child/child-local-variable
 import { TemplatesComponent } from './templates/templates.component';
 import { ChildComComponent } from './parent-child-com/child-com/child-com.component';
 import { ParentComComponent } from './parent-child-com/parent-com/parent-com.component';
+import { CpParentComponent } from './content-projection/cp-parent/cp-parent.component';
+import { CpChildComponent } from './content-projection/cp-child/cp-child.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ParentComComponent } from './parent-child-com/parent-com/parent-com.com
     ChildLocalVariableComponent,
     TemplatesComponent,
     ChildComComponent,
-    ParentComComponent
+    ParentComComponent,
+    CpParentComponent,
+    CpChildComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,13 @@
+<p>This is the parent of the content projection</p>
+<app-cp-child>
+    <p question>This is also projected using the content projection concept</p>
+    <p>This is projected using the content projection concept</p>
+    <button type="button" appContentToggle>Is content project cool?</button>
+    <ng-template appContent>
+        It depends on what you do with it.
+    </ng-template>
+    <p>Let's learn about content projection----------!</p>
+    <ng-container ngProjectAs="[question1]">
+      <p>Is content projection cool?</p>
+    </ng-container>
+</app-cp-child>
