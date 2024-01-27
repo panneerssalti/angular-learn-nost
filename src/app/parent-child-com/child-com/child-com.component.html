@@ -1,2 +1,5 @@
 <p>{{inputFeed}}</p>
 <button type="button" (click)="emitEvent()">CLICK TO EMIT</button>
+<br>
+<label for="customInput">Custom Input:</label>
+<input id="customInput" [value]="customValue" (input)="onInput($event)" />

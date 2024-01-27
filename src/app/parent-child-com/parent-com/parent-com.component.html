@@ -2,3 +2,6 @@
 <ul>
     <li *ngFor="let date of dateArray">{{date}}</li>
 </ul>
+<br>
+<app-child-com [(customValue)]="parentValue"></app-child-com>
+<p>Parent Value: {{ parentValue }}</p>
