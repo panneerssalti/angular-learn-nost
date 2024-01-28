@@ -22,6 +22,7 @@ import { TemplateExperimentComponent } from './templates/template-experiment/tem
 import { PipesComponent } from './pipes/pipes.component';
 import { ConcatenatePipe } from './pipes/concatenate.pipe';
 import { DirectiveCheckComponent } from './directive-check/directive-check.component';
+import { AppHighlightDirective } from './directive-check/app-hightlightdirective';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { DirectiveCheckComponent } from './directive-check/directive-check.compo
     TemplateExperimentComponent,
     PipesComponent,
     ConcatenatePipe,
-    DirectiveCheckComponent
+    DirectiveCheckComponent,
+    AppHighlightDirective
   ],
   imports: [
     BrowserModule,

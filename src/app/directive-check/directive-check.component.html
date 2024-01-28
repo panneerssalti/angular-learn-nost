@@ -20,5 +20,10 @@
 <div [ngSwitch]="switchString">
     <div *ngSwitchCase="'case1'">This is a case1</div>
     <div *ngSwitchCase="'case2'">This is a case2</div>
-    <div *ngSwitchDefault>This is a default case</div>
+    <div *ngSwitchDefault>This is a case1</div>
 </div>
+
+<p [appHighlight]="highlightColor">this is to test the apphightlight directive</p>
+<p appHighlight>this is to test the apphightlight directive</p>
+<p appHighlight defaultColor="green">this is to test the apphightlight directive</p>
+

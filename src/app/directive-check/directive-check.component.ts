@@ -9,4 +9,6 @@ export class DirectiveCheckComponent {
   booleanValue:boolean = true;
   stringArray:Array<string> = ['panneer','selvam','hari','prasad'];
   switchString:string = 'case5';
+  highlightColor:string = 'pink';
+  defaultColor:string = 'yellow';
 }
