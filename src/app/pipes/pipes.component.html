@@ -1,0 +1,11 @@
+<p>{{variableOne|uppercase}}</p>
+<p>{{variableArray|slice:0:2}}</p>
+<div>
+    <p *ngFor="let ele of (variableArray|slice:0:2)">{{ele}}</p>
+</div>
+<p>{{variableDate|date:'short'}}</p>
+<p>{{variableDate|date:'medium'}}</p>
+<p>{{variableDate|date:'long'}}</p>
+<div>
+    <p>{{variableArray|concatenate:'ding':'dong'}}</p>
+</div>

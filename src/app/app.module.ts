@@ -19,6 +19,8 @@ import { CpParentComponent } from './content-projection/cp-parent/cp-parent.comp
 import { CpChildComponent } from './content-projection/cp-child/cp-child.component';
 import { AdComponentComponent } from './dynamic-component/ad-component/ad-component.component';
 import { TemplateExperimentComponent } from './templates/template-experiment/template-experiment.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { ConcatenatePipe } from './pipes/concatenate.pipe';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { TemplateExperimentComponent } from './templates/template-experiment/tem
     CpParentComponent,
     CpChildComponent,
     AdComponentComponent,
-    TemplateExperimentComponent
+    TemplateExperimentComponent,
+    PipesComponent,
+    ConcatenatePipe
   ],
   imports: [
     BrowserModule,
