@@ -1,5 +1,4 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { concat } from 'rxjs';
 
 @Pipe({
   name: 'concatenate',

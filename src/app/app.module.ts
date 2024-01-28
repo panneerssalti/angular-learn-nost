@@ -21,6 +21,7 @@ import { AdComponentComponent } from './dynamic-component/ad-component/ad-compon
 import { TemplateExperimentComponent } from './templates/template-experiment/template-experiment.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { ConcatenatePipe } from './pipes/concatenate.pipe';
+import { DirectiveCheckComponent } from './directive-check/directive-check.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ConcatenatePipe } from './pipes/concatenate.pipe';
     AdComponentComponent,
     TemplateExperimentComponent,
     PipesComponent,
-    ConcatenatePipe
+    ConcatenatePipe,
+    DirectiveCheckComponent
   ],
   imports: [
     BrowserModule,

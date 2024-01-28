@@ -1,0 +1,24 @@
+<div *ngIf="booleanValue">This is a test of a simple *ngIf</div>
+<div *ngIf="booleanValue; else elseBlock">This is a test of a ngIfElse</div>
+<ng-template #elseBlock>
+    <div>This is the else block of the ngIfELse</div>
+</ng-template >
+
+<div *ngIf="booleanValue; then thenBlock; else elseBlock"></div>
+<ng-template #thenBlock>
+    <div>This is the then block of the ngIfThenELse</div>
+</ng-template >
+<ng-template #elseBlock>
+    <div>This is the else block of the ngIfThenELse</div>
+</ng-template >
+
+<div>
+    <p *ngFor="let str of stringArray;let i = index">index:{{i}}++content:{{str}}</p>
+</div>
+
+
+<div [ngSwitch]="switchString">
+    <div *ngSwitchCase="'case1'">This is a case1</div>
+    <div *ngSwitchCase="'case2'">This is a case2</div>
+    <div *ngSwitchDefault>This is a default case</div>
+</div>
