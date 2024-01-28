@@ -1,0 +1,13 @@
+/* Blue text class */
+.blue-text {
+    color: blue;
+  }
+  
+  /* Red text class */
+  .red-text {
+    color: red;
+  }
+
+  .underline-text {
+    text-decoration: underline;
+  }

@@ -1,0 +1,12 @@
+<h1>{{variableOne}}</h1>
+<div>
+    <p *ngFor="let value of stringArray let i = index">{{value+" "+(i+1)}}</p>
+</div>
+<img [src]="'../assets/image.png'" alt="black">
+<tr [ngClass]="'row'"><td class="col-sm" [colSpan]="2">panneer</td></tr>
+<p [attr.aria-label]="'panneer'">This is a test</p>
+
+<p [class.red-text]="true">red color</p>
+<p [class] ="'blue-text underline-text'">blue color</p>
+<p [class] ="classArray">blue color</p>
+<p [class]="classObject">blue color using object</p>
