@@ -23,6 +23,8 @@ import { PipesComponent } from './pipes/pipes.component';
 import { ConcatenatePipe } from './pipes/concatenate.pipe';
 import { DirectiveCheckComponent } from './directive-check/directive-check.component';
 import { AppHighlightDirective } from './directive-check/app-hightlightdirective';
+import { ServiceParentComponent } from './service/service-parent/service-parent.component';
+import { ServiceChildComponent } from './service/service-child/service-child.component';;
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { AppHighlightDirective } from './directive-check/app-hightlightdirective
     PipesComponent,
     ConcatenatePipe,
     DirectiveCheckComponent,
-    AppHighlightDirective
+    AppHighlightDirective,
+    ServiceParentComponent,
+    ServiceChildComponent
   ],
   imports: [
     BrowserModule,
