@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComAComponent } from './com-a/com-a.component';
 import { NoEncapsulationComponent } from './encapsulation/no-encapsulation/no-encapsulation.component';
@@ -24,7 +23,11 @@ import { ConcatenatePipe } from './pipes/concatenate.pipe';
 import { DirectiveCheckComponent } from './directive-check/directive-check.component';
 import { AppHighlightDirective } from './directive-check/app-hightlightdirective';
 import { ServiceParentComponent } from './service/service-parent/service-parent.component';
-import { ServiceChildComponent } from './service/service-child/service-child.component';;
+import { ServiceChildComponent } from './service/service-child/service-child.component';
+import { WebWorkComponent } from './web-worker/web-work/web-work.component';
+import { FormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -50,11 +53,12 @@ import { ServiceChildComponent } from './service/service-child/service-child.com
     DirectiveCheckComponent,
     AppHighlightDirective,
     ServiceParentComponent,
-    ServiceChildComponent
+    ServiceChildComponent,
+    WebWorkComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
